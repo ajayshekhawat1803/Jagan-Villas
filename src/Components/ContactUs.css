@@ -1,0 +1,114 @@
+.contact {
+    width: 100%;
+    color: #fff;
+}
+
+/* .contact>div:first-child {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+} */
+
+.contact .top-part {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact .top-part img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+    z-index: -1;
+}
+
+.contact .top-part h1 {
+    font-size: 4rem;
+}
+
+/* ********Bottom Part********** */
+.contact .bottom-part {
+    width: 100%;
+    background-color: #2b2525;
+    padding: 100px;
+}
+
+.contact .bottom-part .container {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    padding: 50px;
+    gap: 50px;
+    box-shadow: 0px 0px 5px red, 0px 0px 5px blue;
+}
+
+.contact .bottom-part form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact .bottom-part form input {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+}
+
+.contact .bottom-part form textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    height: 80px;
+}
+
+.contact .bottom-part form #submitBtn {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: blue;
+    border: none;
+    font-weight: 700;
+    color: white;
+}
+
+.contact .bottom-part .support {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact .bottom-part .support .item-box {
+    min-width: 200px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .bottom-part .support .item-box>img {
+    width: 40px;
+}
+
+.contact .bottom-part .support .item-box h3,.contact .bottom-part .support .item-box a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    color: #fff;
+}
+.contact .bottom-part .support .item-box #location{
+font-size: 0.8rem;
+}

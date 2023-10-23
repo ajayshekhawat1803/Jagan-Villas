@@ -1,0 +1,252 @@
+/*****************CSS For Page 1 in Home Section******************/
+.home #page1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.home #page1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: absolute;
+    z-index: -1;
+}
+
+.home #page1>h1 {
+    font-size: 7rem;
+    text-align: center;
+    line-height: 110px;
+    margin-bottom: 30px;
+}
+
+.home #page1>p {
+    font-size: 1rem;
+    max-width: 60%;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.home #page1 .btn-cont {
+    display: flex;
+    gap: 10px;
+}
+
+/*****************CSS For Page 2 in Home Section******************/
+.home #page2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 30px;
+    color: white;
+}
+
+.home #page2>h1::before {
+    content: "Jagan Vilas";
+    color: aqua;
+    margin: 20px auto;
+    text-shadow: 0px 0px 3px black;
+    font-size: 1.6rem;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: changeText 12s linear infinite, foldText 3s linear infinite;
+    display: block;
+}
+
+@keyframes changeText {
+
+    0%,
+    100% {
+        content: "Jagan Villas";
+        text-decoration: underline;
+        font-size: 2rem;
+    }
+
+    25% {
+        content: "A PG for Boys";
+    }
+
+    50% {
+        content: "A Home far from your Home";
+    }
+
+    75% {
+        content: "Achieve Your Goals Without Distractions Here !!!";
+    }
+}
+
+@keyframes foldText {
+
+    0%,
+    100% {
+        width: 100%;
+    }
+
+    50% {
+        width: 0%;
+    }
+}
+
+.home #page2>h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 3px red;
+}
+
+.home #page2>p {
+    margin: 20px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.home #page2>p span {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px green;
+}
+
+/* Feature Box Css */
+.home #page2 .feature-cont {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home #page2 .feature-box {
+    width: 31%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.home #page2 .feature-box .img-cont {
+    width: 100%;
+    height: 300px;
+}
+
+.home #page2 .feature-box .img-cont img {
+    width: 100%;
+    height: 100%;
+}
+
+.home #page2 .feature-box>h2 {
+    margin: 20px;
+}
+
+.home #page2 .feature-box>p {
+    font-weight: 800;
+    color: #686868;
+}
+
+/**********Page 3 CSS IN HOME SECTION**************/
+.home #page3 {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    /* background: radial-gradient(circle at 80% 80%, transparent, #333); */
+}
+
+.home #page3>img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.home #page3 .top-part {
+    padding: 50px 60px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.home #page3 .line {
+    border: 2px solid white;
+    height: 150px;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.home #page3 .top-part h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.home #page3 .top-part h4 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.home #page3 .bottom-part {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+.home #page3 .bottom-part div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+    width: 50%;
+}
+
+.home #page3 .bottom-part select {
+    background-color: #a78383;
+    width: 350px;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 800;
+}
+
+.home #page3 .bottom-part select:first-child {
+    width: 300px;
+}
+
+.home #page3 .bottom-part .img-cont {
+    width: 50%;
+    height: 400px;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.home #page3 .bottom-part .img-cont img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.home #page3 .bottom-part .img-cont #dishName {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    bottom: 50px;
+}
