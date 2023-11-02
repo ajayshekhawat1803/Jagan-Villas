@@ -1,12 +1,14 @@
 /*****************CSS For Page 1 in Home Section******************/
 .home #page1 {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 740px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
+    position: relative;
 }
 
 .home #page1 video {
@@ -19,9 +21,9 @@
 }
 
 .home #page1>h1 {
-    font-size: 7rem;
+    font-size: 5.5vw;
     text-align: center;
-    line-height: 110px;
+    line-height: 5.5vw;
     margin-bottom: 30px;
 }
 
@@ -55,11 +57,11 @@
     color: aqua;
     margin: 20px auto;
     text-shadow: 0px 0px 3px black;
-    font-size: 1.6rem;
     text-wrap: nowrap;
     overflow: hidden;
     animation: changeText 12s linear infinite, foldText 3s linear infinite;
     display: block;
+    height: 40px;
 }
 
 @keyframes changeText {
@@ -68,7 +70,7 @@
     100% {
         content: "Jagan Villas";
         text-decoration: underline;
-        font-size: 2rem;
+        font-size: 1.1rem;
     }
 
     25% {
@@ -122,7 +124,7 @@
     padding: 15px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -135,6 +137,7 @@
     padding-bottom: 20px;
     text-align: center;
     color: #000;
+    min-width: 300px;
 }
 
 .home #page2 .feature-box .img-cont {
@@ -161,6 +164,7 @@
     width: 100%;
     height: 100vh;
     color: #fff;
+    position: relative;
     /* background: radial-gradient(circle at 80% 80%, transparent, #333); */
 }
 
@@ -181,7 +185,7 @@
 
 .home #page3 .line {
     border: 2px solid white;
-    height: 150px;
+    height: 100px;
     width: fit-content;
     border-radius: 50px;
 }
@@ -249,4 +253,96 @@
     letter-spacing: 2px;
     text-align: center;
     bottom: 50px;
+}
+
+@media (max-width:950px) {
+    .home #page3 .bottom-part {
+        flex-direction: column;
+    }
+    .home #page3 .bottom-part div:first-child {
+        width: 90%;
+    }
+    .home #page3 .bottom-part .img-cont {
+        width: 90%;
+    }
+    .home #page3{
+        height: unset;
+    }
+}
+
+@media (max-width:730px) {
+    .home #page2 .feature-box {
+        width: 91%;
+    }
+    .home #page2 .feature-cont {
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+    footer .box {
+        margin-bottom: 30px;
+    }
+    footer .box h1 {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width:550px) {
+    .home #page1 .btn-cont {
+        flex-direction: column;
+    }
+    .home #page1{
+        /* padding-top: 30px; */
+    }
+
+    .btn {
+        width: 200px !important;
+    }
+
+    .home #page1>h1 {
+        font-size: 8.5vw;
+        line-height: 7.5vw;
+    }
+    .home #page1>p {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+
+    .home #page2 {
+        padding: 10px 30px;
+    }
+    .home #page2>h1{
+        max-width: 100%;
+        font-size: 2rem;
+    }
+    .home #page3 .top-part {
+        padding: 50px 20px 0;
+        gap: 15px;
+    }
+}
+@media (max-width:400px) {
+    .home #page1>h1 {
+        font-size: 9.5vw;
+        line-height: 9.5vw;
+    }
+    .btn {
+        width: 200px !important;
+        height: 40px;
+    }
+    .home #page3 .bottom-part .img-cont {
+        width: 100%;
+        height: 302px;
+    }
+    .home #page3 .bottom-part select {
+        width: 290px;
+    }
+    .home #page3 .bottom-part select:first-child {
+        width: 260px;
+    }
+    .home #page3 .bottom-part {
+        padding: 15px;
+    }
+    .home #page3 .top-part h4 {
+        font-size: 1.4rem;
+    }
 }
