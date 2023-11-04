@@ -17,7 +17,7 @@ const About = () => {
           </div>
           <div className="content">
             <h2>Space Beautifiers</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deleniti odio, accusamus, eum, rem soluta temporibus nisi perferendis corrupti illo dolores. Illum, unde officia. Maiores quas architecto hic sit laborum?</p>
+            <p>Transform your living space with our space beautifiers. Explore a curated collection of elegant accents and eye-catching details to add charm and personality to your home. Let your space shine with unique touches of style and elegance.</p>
           </div>
         </div>
         <div className="card">

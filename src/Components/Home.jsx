@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './Home.css'
 import video from '../assets/video.mp4'
 import fountain from '../assets/fountain.jpeg'
-import bedroom from '../assets/bedroom.jpeg'
+import bedroom from '../assets/bedroom.jpg'
 import garden from '../assets/garden.jpeg'
+import hall from '../assets/hall.jpg'
 // Images Importing
 // import alooParatha from "../assets/Food Images/alooParatha.jpg"
 // import mixVeg from "../assets/Food Images/mixVeg.jpg"
@@ -342,7 +343,7 @@ const Home = () => {
         </div>
       </div>
       <div id="page3">
-        <img src={garden} alt="Not Loaded" />
+        <img src={hall} alt="Not Loaded" />
         <div className="top-part">
           <div className="line"></div>
           <div>
