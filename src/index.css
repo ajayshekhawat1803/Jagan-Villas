@@ -54,3 +54,6 @@ body {
   background-color: #ab916c;
   color: white;
 }
+#root{
+  position: relative;
+}

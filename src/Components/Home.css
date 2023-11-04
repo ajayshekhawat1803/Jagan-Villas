@@ -1,7 +1,25 @@
+.home {
+    position: relative;
+}
+
+#whatsappIcon {
+    display: block;
+    position: fixed;
+    z-index: 990;
+    right: 20px;
+    bottom: 3vh;
+    background-color: #fff;
+    padding: 10px 12px;
+    border-radius: 50%;
+}
+#whatsappIcon img{
+    height: 30px;
+    width: 30px;
+}
+
 /*****************CSS For Page 1 in Home Section******************/
 .home #page1 {
     width: 100%;
-    /* height: 100vh; */
     height: 740px;
     display: flex;
     flex-direction: column;
@@ -32,6 +50,13 @@
     max-width: 60%;
     text-align: center;
     margin-bottom: 18px;
+}
+
+#viewmore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .home #page1 .btn-cont {
@@ -259,13 +284,16 @@
     .home #page3 .bottom-part {
         flex-direction: column;
     }
+
     .home #page3 .bottom-part div:first-child {
         width: 90%;
     }
+
     .home #page3 .bottom-part .img-cont {
         width: 90%;
     }
-    .home #page3{
+
+    .home #page3 {
         height: unset;
     }
 }
@@ -274,16 +302,11 @@
     .home #page2 .feature-box {
         width: 91%;
     }
+
     .home #page2 .feature-cont {
         width: 100%;
         display: flex;
-        justify-content:center;
-    }
-    footer .box {
-        margin-bottom: 30px;
-    }
-    footer .box h1 {
-        margin-bottom: 10px !important;
+        justify-content: center;
     }
 }
 
@@ -291,7 +314,8 @@
     .home #page1 .btn-cont {
         flex-direction: column;
     }
-    .home #page1{
+
+    .home #page1 {
         /* padding-top: 30px; */
     }
 
@@ -303,6 +327,7 @@
         font-size: 8.5vw;
         line-height: 7.5vw;
     }
+
     .home #page1>p {
         font-size: 0.9rem;
         max-width: 90%;
@@ -311,37 +336,49 @@
     .home #page2 {
         padding: 10px 30px;
     }
-    .home #page2>h1{
+
+    .home #page2>h1 {
         max-width: 100%;
         font-size: 2rem;
     }
+
     .home #page3 .top-part {
         padding: 50px 20px 0;
         gap: 15px;
     }
+    .home #page1 {
+        height: 500px;
+    }
 }
+
 @media (max-width:400px) {
     .home #page1>h1 {
         font-size: 9.5vw;
         line-height: 9.5vw;
     }
+
     .btn {
         width: 200px !important;
         height: 40px;
     }
+
     .home #page3 .bottom-part .img-cont {
         width: 100%;
         height: 302px;
     }
+
     .home #page3 .bottom-part select {
         width: 290px;
     }
+
     .home #page3 .bottom-part select:first-child {
         width: 260px;
     }
+
     .home #page3 .bottom-part {
         padding: 15px;
     }
+
     .home #page3 .top-part h4 {
         font-size: 1.4rem;
     }

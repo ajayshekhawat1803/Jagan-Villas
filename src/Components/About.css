@@ -20,13 +20,16 @@
 .about .facilities {
     width: 100%;
     display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
     padding: 50px 4rem;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgba(252, 224, 224, 0.865);
 }
 
 .about .card {
     width: 30%;
+    min-width: 300px;
     text-align: center;
     border-radius: 13px;
     overflow: hidden;
@@ -57,4 +60,24 @@
 .about .card .content p {
     color: #555;
     font-weight: 500;
+}
+
+@media (max-width:650px) {
+    .about .card {
+        width: 95%;
+    }
+    .about .top1 h1 {
+        font-size: 8vw;
+    }
+    .about .top1 {
+        height: 400px;
+    }
+}
+@media (max-width:420px) {
+    .about .card {
+        min-width:290px ;
+    }
+    .about .top1 h1 {
+        font-size: 11vw;
+    }
 }

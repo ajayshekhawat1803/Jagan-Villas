@@ -104,11 +104,45 @@
     width: 40px;
 }
 
-.contact .bottom-part .support .item-box h3,.contact .bottom-part .support .item-box a {
+.contact .bottom-part .support .item-box h3,
+.contact .bottom-part .support .item-box a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
     color: #fff;
 }
-.contact .bottom-part .support .item-box #location{
-font-size: 0.8rem;
+
+.contact .bottom-part .support .item-box #location {
+    font-size: 0.8rem;
+}
+
+@media (max-width:1070px) {
+    .contact .bottom-part .container {
+        flex-direction: column;
+    }
+
+    .contact .bottom-part form {
+        width: 100%;
+    }
+
+    .contact .bottom-part .support {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .contact .bottom-part {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width:430px) {
+    .contact .bottom-part .container {
+        padding: 35px 15px;
+    }
+    .contact .top-part h1 {
+        font-size: 3rem;
+    }
+    .contact .top-part {
+        height: 450px;
+    }
 }

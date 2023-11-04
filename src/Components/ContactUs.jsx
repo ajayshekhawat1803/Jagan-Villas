@@ -29,7 +29,7 @@ const ContactUs = () => {
                   <img src={call} alt="Not Available" />
                   <div>
                   <h3>+91 9460066518</h3>
-                  <h3>+91 9460066518</h3>
+                  <h3>+91 7597607102</h3>
                   </div>
                 </div>
                 <div className="item-box">
@@ -42,7 +42,7 @@ const ContactUs = () => {
                 </div>
                 <div className="item-box">
                   <img src={whatsapp} alt="Not Available" />
-                  <a href="">wa.me//9460066518</a>
+                  <a href={`https://wa.me/+917597607102?text=${encodeURIComponent("Hello I want to have a seat in your PG.")}`}>Jagan Villas</a>
                 </div>
           </div>
         </div>

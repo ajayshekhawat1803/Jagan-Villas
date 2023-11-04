@@ -14,6 +14,7 @@ const Footer = () => {
             </div>
             <div className="box">
                 <h1>Facilities</h1>
+                <span>Free Wifi</span>
                 <span>Well Furnished Rooms</span>
                 <span>Healthy Food</span>
                 <span>Heigenic Environment</span>
@@ -25,9 +26,12 @@ const Footer = () => {
                     <img src={location} alt="not found" />
                     <a href="">C-23,Berwa Colony,Bajaj Nagar,Jaipur - 302015</a>
                 </div>
-                <div>
+                <div >
                     <img src={call} alt="not found" />
-                    <a href="">+91 9460066518</a>
+                    <div className='number-box'>
+                        <a href="">+91 9460066518</a>
+                        <a href="">+91 7597607102</a>
+                    </div>
                 </div>
                 <div>
                     <img src={mail} alt="not found" />
@@ -35,7 +39,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <img src={whatsapp} alt="not found" />
-                    <a href="https://wa.me//9460066518">9460066518</a>
+                    <a href="https://wa.me//+917597607102">Jagan Villas</a>
                 </div>
             </div>
             <div className="box">
